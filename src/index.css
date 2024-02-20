@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  font-family: Quicksand, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header a {
+  color: #af1313;
+}
+
+.header a:hover {
+  background: #e72929;
+  color: white;
+  cursor: pointer;
+}
+
+.header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.header ul a {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.menu_container:hover .menu {
+  display: block;
+}
+
+.menu a {
+  width: 100%;
+  min-width: 8rem;
+}
+
+.cart_count {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size: 0.9rem;
+}
+
+/* thumbnail  */
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li a {
+  height: 22.5rem;
+  width: 20rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #e72929;
+}
+
+.image {
+  object-fit: cover;
+  height: 14.5rem;
+}
+
+.content {
+  margin-top: 0.3rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  height: 7rem;
+}
+
+.favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+.favorite.not {
+  color: grey;
+}
+
+.stars {
+  margin: 0.5rem 0;
+}
+
+.product_item_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.origins span {
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: grey;
+  margin-right: 0.3rem;
+  padding: 0 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.origins {
+  flex: 9;
+}
+
+.cook_time {
+  font-size: 0.9rem;
+  flex: 3;
+  text-align: right;
+}
+
+.price {
+  position: absolute;
+  bottom: 0;
+  left: 0.9rem;
+  background-color: white;
+  padding: 0.3rem 100% 0 0;
+  color: #414141;
+  margin-top: 0.7rem;
+  
+}
+
+/* search  */
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.container input {
+  border-radius: 10rem 0 0 10rem;
+  border: none;
+  height: 3rem;
+  width: 20rem;
+  background-color: #f1f1f1;
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.container button {
+  color: grey;
+  height: 3rem;
+  width: 5rem;
+  font-size: 1rem;
+  border-radius: 0 10rem 10rem 0;
+  border: none;
+  background-color: #e72929;
+  color: white;
+  opacity: 0.8;
+  outline: none;
+}
+
+.container button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* tags restaurants  */
+
+.container-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-tags a {
+  background-color: #f0f0f0;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  color: blue;
+}
