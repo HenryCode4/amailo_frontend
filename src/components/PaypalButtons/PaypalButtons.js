@@ -37,7 +37,7 @@ import {
         purchase_units: [
           {
             amount: {
-              currency_code: 'NGN',
+              currency_code: 'USD',
               value: order.totalPrice,
             },
           },
