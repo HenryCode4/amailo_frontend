@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CartProvider from './hooks/useCart';
 import './axiosConfig';
 import { AuthProvider } from './hooks/useAuth';
@@ -19,7 +19,9 @@ root.render(
     <LoadingProvider>
       <AuthProvider>
       <CartProvider>
-      <App />
+      <Routes>
+          <Route path="/*" element={<App />} /> 
+      </Routes>
       <ToastContainer
       position='bottom-right'
       autoClose={5000}
