@@ -35,7 +35,7 @@ export default function Search({
         onChange={e => setTerm(e.target.value)}
         onKeyUp={e => e.key === 'Enter' && search()}
         value={term}
-        className='py-2 ml-4'
+        className='py-2 ml-4 outline-none'
       />
       <button className='bg-red-500 py-2 px-2 text-white font-bold h-full' onClick={search}>Search</button>
       </div>

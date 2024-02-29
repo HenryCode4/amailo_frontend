@@ -54,7 +54,7 @@ export default function CheckoutPage() {
           </div>
           <OrderItemsList order={order} />
         </div>
-        <div>
+        <div className='w-full'>
           <Title title="Choose Your Location" fontSize="1.6rem" />
           <Map
             location={order.addressLatLng}

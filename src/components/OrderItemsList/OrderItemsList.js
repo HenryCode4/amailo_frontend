@@ -14,10 +14,10 @@ export default function OrderItemsList({ order }) {
           </td>
         </tr>
         {order.items.map(item => (
-          <tr key={item.food.id}>
+          <tr className='flex flex-col md:flex-row gap-x-6 items-center ' key={item.food.id}>
             <td>
               <Link to={`/food/${item.food.id}`}>
-                <img src={item.food.imageUrl} alt='' />
+                <img className='w-[50px] h-[50px]' src={item.food.imageUrl} alt='' />
               </Link>
             </td>
             <td>{item.food.name}</td>
