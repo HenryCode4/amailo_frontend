@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
  // className={'container-tags'}
@@ -6,14 +6,23 @@ import { Link } from 'react-router-dom';
       //   justifyContent: forFoodPage ? 'start' : 'center',
       // }}
 export default function Tags({ tags, forFoodPage }) {
-  console.log(tags);
+
+
+  const handleTagClick = (tagId) => {
+    const selected = tags.find((tag) => tag.imageUrl === tagId);
+    localStorage.setItem("selected", JSON.stringify(selected));
+  };
+
+  
   return (
     <div
      
       className=' pb-6 px-6 pt-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-center items-center '
     >
       {tags.map(tag => (
-        <Link className='m-4 shadow-md rounded-full flex flex-col justify-center items-center' key={tag.name} to={`/tag/${tag.name}`}>
+        <Link 
+        onClick={() => handleTagClick(tag.imageUrl)}
+        className='m-4 shadow-md rounded-full flex flex-col justify-center items-center' key={tag.name} to={`/food-branch/${tag.name}`}>
           <img className='w-[100px] h-[100px] object-cover rounded-full' src={`/icons/${tag.imageUrl}`}  alt="" />
           
           <p className='font-semibold text-xl pb-2 text-gray-500'>{tag.name}

@@ -59,14 +59,14 @@ export default function FoodPage() {
               ))}
             </div>
 
-            <div className={classes.tags}>
+            {/* <div className={classes.tags}>
               {food.tags && (
                 <Tags
-                  tags={food.tags.map(tag => ({ name: tag }))}
+                  tags={food.tags.map(tag => ({ name: tag, imageUrl: imageUrl }))}
                   forFoodPage={true}
                 />
               )}
-            </div>
+            </div> */}
 
             <div className={classes.cook_time}>
               <span>

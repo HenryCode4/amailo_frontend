@@ -11,6 +11,7 @@ import PaymentPage from './pages/Payment/PaymentPage'
 import OrderTrackPage from './pages/OrderTrack/OrderTrackPage'
 import ProfilePage from './pages/Profile/ProfilePage'
 import OrdersPage from './pages/Orders/OrdersPage'
+import FoodBranch from './pages/FoodBranch'
 
 
 export default function AppRoutes() {
@@ -23,6 +24,7 @@ export default function AppRoutes() {
         <Route path='/cart' element={<CartPage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/register' element={<RegisterPage />} />
+        <Route path='/food-branch/:tag' element={<FoodBranch />} />
         <Route path='/checkout' element={<AuthRoute>
             <CheckoutPage />
         </AuthRoute>} />

@@ -61,6 +61,10 @@ const HomePage = () => {
     <Tags tags={tags}/>
 
 
+    <div className='w-full px-10 pb-2'>
+        <h3 className='text-xl font-semibold text-center md:text-start text-gray-500'>Suggestions you may like</h3>
+    </div>
+
     {
         foods.length === 0 && <NotFound linkText={'Reset Search'}/>
     }
