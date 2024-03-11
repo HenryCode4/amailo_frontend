@@ -58,7 +58,9 @@ const HomePage = () => {
     <Search />
 
     <p className='text-center text-gray-500 text-[1.3rem] font-bold'>Choose your preferred restaurant</p>
-    <Tags tags={tags}/>
+    <Tags 
+    tags={tags}
+    />
 
 
     <div className='w-full px-10 pb-2'>

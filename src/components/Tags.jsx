@@ -25,7 +25,7 @@ export default function Tags({ tags, forFoodPage }) {
         className='m-4 shadow-md rounded-full flex flex-col justify-center items-center' key={tag.name} to={`/food-branch/${tag.name}`}>
           <img className='w-[100px] h-[100px] object-cover rounded-full' src={`${tag.imageUrl}`}  alt="" />
           
-          <p className='font-semibold text-xl pb-2 text-gray-500'>{tag.name}
+          <p className='font-semibold text-[0.8rem] md:text-[1.1rem] pb-2 text-gray-500'>{tag.name}
           {!forFoodPage && `(${tag.count})`}</p>
           
         </Link>
