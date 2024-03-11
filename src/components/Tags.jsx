@@ -23,7 +23,7 @@ export default function Tags({ tags, forFoodPage }) {
         <Link 
         onClick={() => handleTagClick(tag.imageUrl)}
         className='m-4 shadow-md rounded-full flex flex-col justify-center items-center' key={tag.name} to={`/food-branch/${tag.name}`}>
-          <img className='w-[100px] h-[100px] object-cover rounded-full' src={`/icons/${tag.imageUrl}`}  alt="" />
+          <img className='w-[100px] h-[100px] object-cover rounded-full' src={`${tag.imageUrl}`}  alt="" />
           
           <p className='font-semibold text-xl pb-2 text-gray-500'>{tag.name}
           {!forFoodPage && `(${tag.count})`}</p>
