@@ -1,9 +1,8 @@
 import React from 'react';
 import InputContainer from '../InputContainer/InputContainer';
 import classes from './input.module.css';
-
 function Input(
-  { label, type, defaultValue, onChange, onBlur, name, error, imageUrlTags }, // Add imageUrlTags to props
+  { label, type, defaultValue, onChange, onBlur, name, error },
   ref
 ) {
   const getErrorMessage = () => {
@@ -32,9 +31,6 @@ function Input(
         onChange={onChange}
         onBlur={onBlur}
       />
-      {imageUrlTags && ( // Render imageUrlTags if it exists
-        <img src={imageUrlTags} alt="imgUrl Tag" className={classes.tagImage} />
-      )}
       {error && <div className={classes.error}>{getErrorMessage()}</div>}
     </InputContainer>
   );

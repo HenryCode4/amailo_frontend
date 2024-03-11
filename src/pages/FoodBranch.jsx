@@ -48,7 +48,7 @@ const FoodBranch = () => {
     <div className='pb-16 p-2'>
   {selectedTag && Object.keys(selectedTag).length > 0 && (
     <div className='flex flex-col gap-2 justify-center items-center'>
-      <img className='w-[150px] h-[150px]' src={`/icons/${selectedTag.imageUrl}`} alt={selectedTag.name} />
+      <img className='w-[150px] h-[150px]' src={`${selectedTag.imageUrl}`} alt={selectedTag.name} />
       <h1 className='text-2xl text-gray-500 font-semibold'>{selectedTag.name}</h1>
       <p className='text-[0.8rem] text-gray-400 font-semibold text-center'>You can now choose your preferred dish from our menu 😋</p>
     </div>
