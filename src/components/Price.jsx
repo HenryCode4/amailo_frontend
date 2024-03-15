@@ -11,8 +11,8 @@ const Price = ({ price, locale, currency }) => {
 };
 
 Price.defaultProps = {
-  locale: 'en-NG',
-  currency: 'NGN',
+  locale: 'en-US',
+  currency: 'USD',
 };
 
 export default Price;
