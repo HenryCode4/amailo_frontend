@@ -35,7 +35,9 @@ export default function OrdersPage() {
   }, [filter]);
 
   return (
-    <div className={classes.container}>
+    <div className='pb-16'>
+
+      <div className={classes.container}>
       <Title title="Orders" margin="1.5rem 0 0 .2rem" fontSize="1.9rem" />
 
       {allStatus && (
@@ -92,5 +94,7 @@ export default function OrdersPage() {
           </div>
         ))}
     </div>
+    </div>
+    
   );
 }
