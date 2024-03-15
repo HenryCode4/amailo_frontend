@@ -42,7 +42,7 @@ const FoodBranch = () => {
 
     console.log(selectedTag);
   return (
-    <>
+    <div className='pb-4'>
     
     
     <div className='pb-16 p-2'>
@@ -63,7 +63,7 @@ const FoodBranch = () => {
     
         <Thumbnails foods={foods} />
     
-    </>
+    </div>
     
   )
 }

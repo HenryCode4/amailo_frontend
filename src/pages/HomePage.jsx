@@ -54,7 +54,7 @@ const HomePage = () => {
         <img className='w-[350px] h-[350px] md:w-[550px] md:h-[550px]' src='/icons/delivery.jpg' alt="" />
     </div>
 
-    <div className='pt-2' id='order-now'>
+    <div className='pt-2 pb-4' id='order-now'>
     <Search />
 
     <p className='text-center text-gray-500 text-[1.3rem] font-bold'>Choose your preferred restaurant</p>
